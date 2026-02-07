@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayCalcUtility - Sovereign Financial & HR Architecture for the Caribbean</title>
-    <meta name="description" content="PayCalcUtility provides secure, compliant, and intuitive payroll and HR solutions for banks and financial institutions in the OECS region.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PayCalcUtility - Clarity</title>
+<meta name="description" content="High-integrity global compliance and payroll architecture. Zero-footprint, geofence-driven timekeeping and automated statutory reporting.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+    body { font-family: 'Inter', sans-serif; }
+    .tracking-tagline { letter-spacing: 0.5em; }
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <div class="relative overflow-hidden">
-        <!-- Header -->
-        <header class="absolute top-0 left-0 right-0 z-10 p-6">
-            <div class="max-w-7xl mx-auto flex justify-between items-center">
-                <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-                        <span class="text-white font-black text-sm">P</span>
-                    </div>
-                    <span class="font-black text-xl tracking-tight text-slate-900">PayCalcUtility</span>
-                </div>
-                <a href="https://payroll.paycalcutility.com" class="px-6 py-2 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-blue-700 transition-colors">
-                    Client Login
-                </a>
-            </div>
-        </header>
+<!-- Main Centered Branding Section -->
+<main class="min-h-screen w-full flex flex-col items-center justify-center relative px-6 overflow-hidden">
+    
+    <!-- Background Accents -->
+    <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-500/5 blur-[120px] rounded-full"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-500/5 blur-[120px] rounded-full"></div>
 
-        <!-- Hero Section -->
-        <main class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-gradient-to-b from-white to-slate-100">
-            <div class="max-w-3xl mx-auto text-center px-6">
-                <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter">
-                    Sovereign Financial & HR Architecture
-                </h1>
-                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 leading-relaxed">
-                    Engineered exclusively for Caribbean banks and financial institutions. We provide a high-integrity, compliant, and intuitive platform for payroll, human resource management, and operational monitoring.
-                </p>
-                <div class="mt-10 flex justify-center gap-4">
-                    <a href="#contact" class="px-8 py-4 bg-blue-600 text-white text-sm font-bold uppercase tracking-widest rounded-full shadow-lg hover:bg-blue-700 transition-transform hover:scale-105">
-                        Request a Demo
-                    </a>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Features Section -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto">
-                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Built on a Foundation of Trust and Precision</h2>
-                <p class="mt-4 text-slate-600">Our platform is designed from the ground up to meet the unique statutory and operational demands of the OECS region.</p>
-            </div>
-            <div class="mt-16 grid md:grid-cols-3 gap-8">
-                <!-- Feature 1: Payroll -->
-                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-                    <h3 class="text-lg font-black">Statutory Payroll Engine</h3>
-                    <p class="mt-2 text-sm text-slate-600">Automate complex calculations for Social Security, Medical Benefits, and Education Levy with a fully compliant, zero-error logic engine.</p>
-                </div>
-                <!-- Feature 2: HR Management -->
-                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-                    <h3 class="text-lg font-black">Human Resource Sovereignty</h3>
-                    <p class="mt-2 text-sm text-slate-600">Manage your entire employee lifecycle, from onboarding to separation, with a secure, auditable, and easy-to-use registry.</p>
-                </div>
-                <!-- Feature 3: Monitoring -->
-                <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100">
-                    <h3 class="text-lg font-black">Ambient Presence Monitoring</h3>
-                    <p class="mt-2 text-sm text-slate-600">Leverage cutting-edge, low-friction attendance tracking with geofenced boundaries and hardware-bound identity verification for high-integrity timekeeping.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Security Section -->
-    <section class="py-24 bg-slate-900 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-black tracking-tight">Uncompromising Security, by Design</h2>
-            <p class="mt-4 text-slate-400 max-w-2xl mx-auto">
-                Our Zero-Footprint, RAM-only architecture ensures that no sensitive data is ever persisted on client machines, providing a level of security that exceeds SOC2 and FIPS 140-2 compliance standards.
+    <div class="max-w-4xl w-full text-center relative z-10 space-y-12">
+        
+        <!-- Centered Logo & Tagline -->
+        <div class="flex flex-col items-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
+            <h1 class="text-5xl md:text-8xl font-black tracking-tighter text-slate-900 leading-none">
+                PayCalc<span class="text-blue-600">Utility</span>
+            </h1>
+            <p class="text-xs md:text-lg font-black uppercase tracking-tagline text-slate-400 mt-3 md:mt-4">
+                Clarity
             </p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="py-16 bg-slate-100 text-center">
-        <p class="text-sm text-slate-600">&copy; 2026 PayCalcUtility. All Rights Reserved.</p>
-        <p class="mt-2 text-sm text-slate-500">Antigua & Barbuda</p>
+        <!-- The "Serenity" Operational Statement -->
+        <p class="text-lg md:text-2xl text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-6 delay-200 duration-1000">
+            Work hours are captured automatically through geofenced sites, eliminating manual timesheets while we handle compliance, approvals, payments, payslips, and accounting.
+        </p>
+
+        <!-- Tool Navigation (Uncluttered Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 animate-in fade-in slide-in-from-bottom-8 delay-500 duration-1000">
+            
+            <!-- Ingress 1: Clients -->
+            <a href="https://payroll.paycalcutility.com/signup" class="group p-6 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm hover:shadow-xl hover:border-blue-500 transition-all text-center">
+                <h3 class="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-1">Organizations</h3>
+                <p class="text-sm font-bold text-slate-800">Initialize Vault</p>
+            </a>
+
+            <!-- Ingress 2: Support/Internal (Sovereign Hub) -->
+            <a href="https://payroll.paycalcutility.com/superadmin" class="group p-6 bg-slate-900 border border-slate-800 rounded-[2.5rem] shadow-xl hover:bg-black transition-all text-center">
+                <h3 class="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Internal Team</h3>
+                <p class="text-sm font-bold text-white">Sovereign Hub</p>
+            </a>
+
+            <!-- Ingress 3: Mobile (Thin Client) -->
+            <a href="https://payroll.paycalcutility.com/login" class="group p-6 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm hover:shadow-xl hover:border-blue-500 transition-all text-center">
+                <h3 class="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-1">Personnel</h3>
+                <p class="text-sm font-bold text-slate-800">Management Hub</p>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Persistent Branding Footer -->
+    <footer class="absolute bottom-10 w-full text-center">
+        <div class="flex flex-col items-center space-y-2">
+            <p class="text-[9px] font-black uppercase tracking-[0.4em] text-slate-300">
+                Global Compliance & HR Architecture
+            </p>
+            <a href="mailto:info@paycalcutility.com" class="text-[10px] font-bold text-blue-500 hover:text-blue-700 transition-colors uppercase tracking-widest">
+                Contact Office
+            </a>
+        </div>
     </footer>
+</main>
+
+<!-- Detailed Value Section (Optional scroll-down) -->
+<section class="py-32 bg-white relative z-10 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-16">
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 class="text-xl font-black tracking-tight">Statutory Integrity</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Multi-jurisdictional calculation engine verified for Social Security, Medical Benefits, and Education Levies with zero-error precision.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <h3 class="text-xl font-black tracking-tight">Ambient Timekeeping</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">WGS-84 coordinate ingestion with 7-decimal precision eliminates manual entry and secures the source of truth for all billable hours.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                </div>
+                <h3 class="text-xl font-black tracking-tight">Ledger Synchronization</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Seamlessly map payroll outputs to global accounting platforms. Disburse funds and update your general ledger in a single atomic action.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
