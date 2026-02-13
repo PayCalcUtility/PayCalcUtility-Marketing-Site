@@ -11,105 +11,120 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
     body { font-family: 'Inter', sans-serif; }
-    .tracking-tagline { letter-spacing: 0.5em; }
-    .auth-only { display: none; }
+    .tracking-tagline { letter-spacing: 0.6em; }
+    /* Optimized centering for the high-integrity brand mark */
+    .brand-centering {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased overflow-hidden">
+<body class="bg-slate-50 text-slate-900 antialiased overflow-hidden">
 
-    <!-- Top Right Sovereign Hub (Discreet L1/L2 Access) -->
+    <!-- TOP-RIGHT: DISCREET SOVEREIGN HUB (1/3 Scale) -->
     <nav class="absolute top-8 right-8 z-50">
         <a href="https://payroll.paycalcutility.com/superadmin" 
-           class="group flex items-center space-x-2 px-4 py-2 bg-slate-900/5 hover:bg-slate-900 border border-slate-900/10 hover:border-slate-900 rounded-full transition-all">
-            <span class="text-[8px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-400">Sovereign Hub</span>
+           class="group flex items-center space-x-2 px-4 py-2 bg-slate-900/5 hover:bg-slate-900 border border-slate-900/10 hover:border-slate-900 rounded-full transition-all duration-500">
+            <span class="text-[8px] font-black uppercase tracking-[0.2em] text-slate-400 group-hover:text-blue-400">Sovereign Hub</span>
         </a>
     </nav>
 
-    <!-- Main Centered Branding & Navigation -->
+    <!-- MAIN INTERFACE: Vertically and Horizontally Centered -->
     <main class="min-h-screen w-full flex flex-col items-center justify-center relative px-6">
         
-        <!-- Background Accents -->
+        <!-- Abstract Background Depth -->
         <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-blue-500/5 blur-[120px] rounded-full pointer-events-none"></div>
         <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-indigo-500/5 blur-[120px] rounded-full pointer-events-none"></div>
 
-        <div class="max-w-4xl w-full text-center relative z-10 space-y-12">
+        <div class="max-w-4xl w-full brand-centering relative z-10 space-y-16">
             
-            <!-- Centered Logo & Tagline -->
-            <div class="flex flex-col items-center animate-in fade-in slide-in-from-bottom-4 duration-1000">
-                <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 leading-none">
+            <!-- BRANDING: Centered identity -->
+            <div class="animate-in fade-in slide-in-from-bottom-4 duration-1000">
+                <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none">
                     PayCalc<span class="text-blue-600">Utility</span>
                 </h1>
-                <p class="text-[10px] md:text-xs font-black uppercase tracking-tagline text-slate-400 mt-3 md:mt-4">
+                <p class="text-[10px] md:text-sm font-black uppercase tracking-tagline text-slate-400 mt-4 md:mt-6 ml-2">
                     Clarity
                 </p>
             </div>
 
-            <!-- The Operational Statement -->
-            <p class="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-6 delay-200 duration-1000">
+            <!-- MISSION STATEMENT -->
+            <p class="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl animate-in fade-in slide-in-from-bottom-6 delay-200 duration-1000">
                 Payroll done simply, right.
             </p>
 
-            <!-- Dual-Action Navigation (Shared Horizontal Space) -->
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4 pt-8 animate-in fade-in slide-in-from-bottom-8 delay-500 duration-1000">
+            <!-- NAVIGATION GRID: User-Persona Paths -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-2xl pt-4 animate-in fade-in slide-in-from-bottom-8 delay-500 duration-1000">
                 
-                <!-- Primary Action: Signup -->
-                <a id="client-cta" href="https://payroll.paycalcutility.com/signup" 
-                   class="group w-full md:w-72 p-6 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm hover:shadow-xl hover:border-blue-500 transition-all text-center">
-                    <h3 id="client-cta-sub" class="text-[9px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-1">Payroll</h3>
-                    <p id="client-cta-main" class="text-sm font-bold text-slate-800">Initialize Vault</p>
+                <!-- PATH A: Prospective Owners / New Companies -->
+                <a id="signup-card" href="https://payroll.paycalcutility.com/signup" 
+                   class="group p-8 bg-white border border-slate-200 rounded-[3rem] shadow-sm hover:shadow-2xl hover:border-blue-500 hover:-translate-y-1 transition-all text-center">
+                    <h3 id="signup-label" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 group-hover:text-blue-600 mb-2">Payroll</h3>
+                    <p id="signup-action" class="text-sm font-black text-slate-800 uppercase tracking-widest">Initialize Vault</p>
                 </a>
 
-                <!-- Secondary Action: Login -->
-                <a href="https://payroll.paycalcutility.com/login" 
-                   class="group w-full md:w-72 p-6 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm hover:shadow-xl hover:border-blue-500 transition-all text-center">
-                    <h3 class="text-[9px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-1">Personnel</h3>
-                    <p class="text-sm font-bold text-slate-800">Management Hub</p>
+                <!-- PATH B: Existing Owners / Employees -->
+                <a id="login-card" href="https://payroll.paycalcutility.com/login" 
+                   class="group p-8 bg-white border border-slate-200 rounded-[3rem] shadow-sm hover:shadow-2xl hover:border-blue-500 hover:-translate-y-1 transition-all text-center">
+                    <h3 id="login-label" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 group-hover:text-blue-600 mb-2">Personnel</h3>
+                    <p id="login-action" class="text-sm font-black text-slate-800 uppercase tracking-widest">Management Hub</p>
                 </a>
 
             </div>
 
         </div>
 
-        <!-- Footnote Navigation -->
-        <footer class="absolute bottom-12 w-full text-center">
-            <div class="flex flex-col items-center space-y-4">
-                <a href="https://payroll.paycalcutility.com/remittances" class="text-[10px] font-bold text-blue-600 hover:text-blue-800 transition-all uppercase tracking-[0.2em]">
-                    Talk to us
-                </a>
-                <p class="text-[8px] font-black uppercase tracking-[0.4em] text-slate-300">
-                    PayCalcUtility Clarity &copy; 2026
-                </p>
-            </div>
+        <!-- FOOTER: Centered Handoffs -->
+        <footer class="absolute bottom-12 w-full text-center space-y-4">
+            <a href="https://payroll.paycalcutility.com/remittances" class="inline-block text-[10px] font-bold text-blue-600 hover:text-blue-800 transition-all uppercase tracking-[0.3em]">
+                Talk to us
+            </a>
+            <p class="text-[8px] font-black uppercase tracking-[0.4em] text-slate-300">
+                PayCalcUtility Clarity &copy; 2026
+            </p>
         </footer>
     </main>
 
-<!-- SMART SESSION SCRIPT -->
+<!-- SMART LOBBY SCRIPT: Curation based on Authorization -->
 <script type="module">
     import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.7';
     
-    // Replace with your production Supabase keys
-    const SUPABASE_URL = 'https://your-project-id.supabase.co';
-    const SUPABASE_ANON_KEY = 'your-anon-key';
+    // Replace with your verified Production Keys
+    const SUPABASE_URL = 'https://antdjhkuaqucicbdqslf.supabase.co';
+    const SUPABASE_ANON_KEY = 'YOUR_PUBLIC_ANON_KEY';
 
     const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-    async function checkSovereignSession() {
+    async function curateUXForUser() {
         const { data: { session } } = await supabase.auth.getSession();
         
         if (session) {
-            const ctaMain = document.getElementById('client-cta-main');
-            const ctaSub = document.getElementById('client-cta-sub');
-            const ctaLink = document.getElementById('client-cta');
+            // USER TYPE: Returning Owner/Admin/Employee
+            const signupAction = document.getElementById('signup-action');
+            const signupLabel = document.getElementById('signup-label');
+            const signupCard = document.getElementById('signup-card');
 
-            if (ctaMain && ctaLink) {
-                ctaMain.innerText = 'Enter Dashboard';
-                ctaSub.innerText = 'Authenticated';
-                ctaLink.href = 'https://payroll.paycalcutility.com';
-                ctaLink.classList.add('border-emerald-500', 'bg-emerald-50/10');
+            const loginAction = document.getElementById('login-action');
+            const loginCard = document.getElementById('login-card');
+
+            if (signupAction && loginAction) {
+                // Transform Signup into "New Portfolio" path
+                signupAction.innerText = 'New Company';
+                signupLabel.innerText = 'Authenticated';
+                signupCard.classList.add('bg-emerald-50/10', 'border-emerald-500/20');
+
+                // Transform Hub into "Direct Access" path
+                loginAction.innerText = 'Open Dashboard';
+                loginAction.classList.add('text-blue-600');
+                loginCard.href = 'https://payroll.paycalcutility.com';
+                loginCard.classList.add('shadow-xl', 'border-blue-500');
             }
         }
     }
-    checkSovereignSession();
+    curateUXForUser();
 </script>
 
 </body>
