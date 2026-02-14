@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PayCalcUtility - Clarity</title>
-<meta name="description" content="Global payroll architecture. Automated geofence timekeeping and statutory reporting.">
+<meta name="description" content="High-integrity global payroll. Automated geofence timekeeping and statutory reporting.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +23,8 @@
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased overflow-x-hidden">
 
-    <!-- TOP-RIGHT: DISCREET SOVEREIGN HUB (1/3 Scale - Hidden by default) -->
-    <nav id="admin-nav" class="absolute top-6 right-6 z-50 hidden">
+    <!-- TOP-RIGHT: SOVEREIGN HUB (Discreet L1/L2 Entry - Hidden by default) -->
+    <nav id="admin-nav" class="absolute top-8 right-8 z-50 hidden">
         <a href="https://payroll.paycalcutility.com/superadmin" 
            class="group flex items-center px-3 py-1 bg-slate-900 border border-slate-900 rounded-full transition-all hover:bg-black shadow-lg scale-75 origin-top-right">
             <span class="text-[9px] font-black uppercase tracking-widest text-blue-400">Sovereign Hub</span>
@@ -50,7 +50,7 @@
                 </p>
             </div>
 
-            <!-- HOMEPAGE MISSION -->
+            <!-- HERO MISSION -->
             <p class="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl animate-in fade-in slide-in-from-bottom-6 delay-200 duration-1000 italic">
                 Payroll done right, simply.
             </p>
@@ -58,24 +58,24 @@
             <!-- NAVIGATION GRID: Dynamic Persona Routing -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl pt-4 animate-in fade-in slide-in-from-bottom-8 delay-500 duration-1000">
                 
-                <!-- PATH 1: Signup / Create Company -->
+                <!-- PATH 1: Enrollment -->
                 <a id="signup-card" href="https://payroll.paycalcutility.com/signup" 
                    class="group p-8 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm hover:shadow-xl hover:border-blue-500 transition-all text-center">
                     <h3 id="signup-label" class="text-[9px] font-black uppercase tracking-[0.2em] text-slate-400 group-hover:text-blue-600 mb-2">Vault</h3>
                     <p id="signup-action" class="text-xs font-black text-slate-800 uppercase tracking-widest">Signup</p>
                 </a>
 
-                <!-- PATH 2: Login / Dashboard -->
+                <!-- PATH 2: Authentication -->
                 <a id="login-card" href="https://payroll.paycalcutility.com/login" 
                    class="group p-8 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm hover:shadow-xl hover:border-blue-500 transition-all text-center">
                     <h3 id="login-label" class="text-[9px] font-black uppercase tracking-[0.2em] text-slate-400 group-hover:text-blue-600 mb-2">Access</h3>
                     <p id="login-action" class="text-xs font-black text-slate-800 uppercase tracking-widest">Log In</p>
                 </a>
 
-                <!-- PATH 3: Informational -->
+                <!-- PATH 3: Curation -->
                 <a href="#about" 
-                   class="group p-8 bg-slate-100/50 border border-transparent rounded-[2.5rem] hover:bg-white hover:border-slate-200 transition-all text-center">
-                    <h3 class="text-[9px] font-black uppercase tracking-[0.2em] text-slate-400 mb-2">Platform</h3>
+                   class="group p-8 bg-slate-100/50 border border-transparent rounded-[2.5rem] hover:bg-white hover:border-slate-200 transition-all text-center border-dashed border-2">
+                    <h3 class="text-[9px] font-black uppercase tracking-[0.2em] text-slate-400 mb-2">Information</h3>
                     <p class="text-xs font-black text-slate-800 uppercase tracking-widest">What we do</p>
                 </a>
 
@@ -94,17 +94,42 @@
         </footer>
     </main>
 
-    <!-- SECTION: ABOUT -->
-    <section id="about" class="min-h-screen bg-white w-full flex items-center justify-center px-6">
-        <div class="max-w-4xl text-center space-y-12">
-            <h2 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight">Clarity through Automation.</h2>
-            <p class="text-xl text-slate-500 leading-relaxed max-w-3xl mx-auto font-medium">
-                Work hours are captured automatically through geofenced sites, eliminating manual timesheets while we handle compliance, approvals, payments, payslips, and accounting.
-            </p>
-            <div class="pt-8">
-                <a href="https://payroll.paycalcutility.com/signup" class="px-10 py-5 bg-blue-600 text-white rounded-full font-black text-[10px] uppercase tracking-widest shadow-2xl shadow-blue-500/40 hover:bg-blue-700 transition-all">
-                    Initialize Enrollment
-                </a>
+    <!-- SECTION: THE CURATED ABOUT EXPERIENCE -->
+    <section id="about" class="min-h-screen bg-white w-full flex items-center justify-center px-6 border-t border-slate-100">
+        <div class="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            
+            <div class="space-y-10">
+                <header class="space-y-4">
+                    <div class="w-12 h-1 bg-blue-600 rounded-full"></div>
+                    <h2 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-none">Clarity through Automation.</h2>
+                </header>
+
+                <p class="text-lg text-slate-500 leading-relaxed font-medium">
+                    Work hours are captured automatically through geofenced sites, eliminating manual timesheets while we handle compliance, approvals, payments, payslips, and accounting.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://payroll.paycalcutility.com/signup" class="px-10 py-5 bg-blue-600 text-white rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl shadow-blue-500/20 hover:bg-blue-700 transition-all text-center">
+                        Initialize Vault
+                    </a>
+                    <a href="https://payroll.paycalcutility.com/about" class="px-10 py-5 bg-white border border-slate-200 text-slate-600 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-slate-50 transition-all text-center">
+                        Explore Process Stories
+                    </a>
+                </div>
+            </div>
+
+            <!-- CURATED PERSONA CARDS -->
+            <div class="space-y-6">
+                <!-- For the Employee -->
+                <div class="p-8 bg-slate-50 rounded-[3rem] border border-slate-100 shadow-sm">
+                    <h4 class="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-3">Personnel Privacy</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed font-medium">Zero-snooping architecture. You see exactly what management sees in real-time. No hidden logs, only geofence crossings.</p>
+                </div>
+                <!-- For the Accountant -->
+                <div class="p-8 bg-slate-900 rounded-[3rem] text-white shadow-2xl">
+                    <h4 class="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-3">Financial Integrity</h4>
+                    <p class="text-sm text-slate-300 leading-relaxed font-medium">Set it and forget it ledger mapping. Disbursement triggers an atomic sync to QuickBooks and Xero.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -114,7 +139,7 @@
     import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.39.7';
     
     const SUPABASE_URL = 'https://antdjhkuaqucicbdqslf.supabase.co';
-    const SUPABASE_ANON_KEY = 'YOUR_PUBLIC_ANON_KEY'; // Ensure this matches your dashboard
+    const SUPABASE_ANON_KEY = 'YOUR_PUBLIC_ANON_KEY'; 
 
     const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
@@ -125,12 +150,12 @@
             const user = session.user;
             const meta = user.app_metadata || {};
 
-            // 1. REVEAL SOVEREIGN HUB: Only for L1/L2 internal SaaS team
+            // 1. REVEAL SOVEREIGN HUB: Only for SaaS Admin team
             if (meta.internal_role) {
                 document.getElementById('admin-nav').classList.remove('hidden');
             }
 
-            // 2. TRANSFORM ACTION CARDS: Intuitive mapping for authenticated owners
+            // 2. TRANSFORM CTAs: Curation for Authenticated VIPs
             const signupAction = document.getElementById('signup-action');
             const signupLabel = document.getElementById('signup-label');
             const loginAction = document.getElementById('login-action');
@@ -138,15 +163,15 @@
             const loginCard = document.getElementById('login-card');
 
             if (signupAction && loginAction) {
-                // Left Card: Portfolio Expansion for existing Owners
-                signupAction.innerText = 'Create a Company';
+                // Return Owner can add to their portfolio
+                signupAction.innerText = 'New Company';
                 signupLabel.innerText = 'Authenticated';
 
-                // Middle Card: Direct Entry to active Vault
+                // Return User moves directly to Dashboard
                 loginAction.innerText = 'Go to Dashboard';
                 loginLabel.innerText = 'Session Active';
-                loginCard.classList.add('border-blue-500', 'ring-4', 'ring-blue-50');
                 loginCard.href = 'https://payroll.paycalcutility.com';
+                loginCard.classList.add('border-blue-500', 'ring-4', 'ring-blue-50');
             }
         }
     }
